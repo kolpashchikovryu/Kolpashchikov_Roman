@@ -1,7 +1,5 @@
 # 1. Реализовать вывод информации о промежутке времени в зависимости от его продолжительности duration в секундах.
 duration = int(input('Введите размер отрезка времени в секундах: '))
-#print(duration)
-
 #Дни
 duration_days = duration // (3600 * 24)
 #print(f'{duration_days} д.')
@@ -14,10 +12,6 @@ duration_min = ((duration % (3600 * 24)) % 3600) // 60
 #Секунды
 duration_sec = duration % 60
 #print(f'{duration_sec} сек.')
-
-#Общий вывод
-#print(f'В введённом отрезке времени: {duration_days} д., {duration_hour} ч., {duration_min} мин., {duration_sec} сек.')
-
 #решение задания
 if (duration_days or duration_hour or duration_min) == 0:
     print(f'В введённом отрезке времени: {duration_sec} сек.')
