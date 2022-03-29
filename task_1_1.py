@@ -2,16 +2,12 @@
 duration = int(input('Введите размер отрезка времени в секундах: '))
 #Дни
 duration_days = duration // (3600 * 24)
-#print(f'{duration_days} д.')
 #Часы
 duration_hour = (duration % (3600 * 24)) // 3600
-#print(f'{duration_hour} ч.')
 #Минуты
 duration_min = ((duration % (3600 * 24)) % 3600) // 60
-#print(f'{duration_min} мин.')
 #Секунды
 duration_sec = duration % 60
-#print(f'{duration_sec} сек.')
 #решение задания
 if (duration_days or duration_hour or duration_min) == 0:
     print(f'В введённом отрезке времени: {duration_sec} сек.')
